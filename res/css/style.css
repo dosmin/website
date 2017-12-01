@@ -2,9 +2,9 @@
     Lime Green - #A8CD1B
 */
 
-/* Base Settings and Browser Support */
+/* Page Settings */
 body {
-  font-size:           100%;
+  background:          #FFFFFF;
   position:            fixed;
   left:                0;
   right:               0;
@@ -14,62 +14,71 @@ body {
   padding:             0;
   min-height:          29em;
   min-width:           33em;
+  
+  font-size:           100%;
+  color:               #000000;
+  font-family:         Arial, sans-serif;
+  text-align:          left;
+  
 } a {
   color:               inherit;
   text-decoration:     none;
+  
 } header, nav, main, footer {
   display:             block;
+  position:            relative;
+  
 }
 
-/* Background and Colors */
-body {
-  background:          #FFFFFF;
-  color:               #000000;
-} header nav a {
-  border-left:        .15em solid #A8CD1B;
-} header nav a:hover, header h1 {
-  color:               #A8CD1B;
-} main {
-    border-top:          .05em solid #A8CD1B;
-    border-bottom:       .05em solid #A8CD1B;
-}
-
-/* Font */
-body {
-  font-family: Arial, sans-serif;
-  text-align:  left;
+/* Header */
+header .title {
+	display: inline-block;
+	padding:    .5em;
+} header .title * {
+	display: inline-block;
+	vertical-align:      bottom;
 } header h1 {
-  text-align:          left;
-  font-size:           2.5em;
-} header nav {
-  text-align:          right;
-} header nav a {
-  text-align:          left;
-    font-size:           1.5em;
-} main {
-  line-height:         1.5;
-}
-
-* Display, Positioning, Padding, and Margins */
-body {
-  position:            fixed;
-} header, main, footer {
-    position:            relative;
-} header h1 {
-    display:             block;
+    display:             inline-block;
     height:              100%;
-    padding:             .45em;
+	padding:             .3em 0;
+	
+	color:               #A8CD1B;
+	text-align:          left;
+	font-size:           3em;
+	
+} header .title img {
+	width:               5em;
+	height:              auto;
+	display:             inline-block;
+	
 } header nav {
     display:             inline-block;
     position:            absolute;
     top:                 0;
-    right:               .75em;
-  width:               70%;
-    height:              100%;
+	right:               0;
+	padding:             .75em;
+	
+	text-align:          right;
+	
 } header nav a {
     display:             inline-block;
     margin:              .75em 0em;
     padding:             .25em;
-} main {
-    padding:             1em;
+	
+	border-left:        .15em solid #A8CD1B;
+	text-align:          left;
+    font-size:           1.5em;
+	
+} header nav a:hover {
+	color:               #A8CD1B;
+} 
+
+/* Main */
+main {
+    border-top:          .05em solid #A8CD1B;
+    border-bottom:       .05em solid #A8CD1B;
+	padding:             1em;
+	line-height:         1.5;
 }
+
+/* Footer */
