@@ -1,7 +1,7 @@
 <?php 
 require "res/layout.php";
 
-$output = msg_addimg('Under Construction');
+$output = "Under Construction";
 
 echoLayout($output);
 ?>
